@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1086747241649",
+    "project_id": "chatappbytam",
+    "storage_bucket": "chatappbytam.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1086747241649:android:e767999841509be399c690",
+        "android_client_info": {
+          "package_name": "com.example.crud"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZv6sxX32U_LTKYx3S6BwR4d6xltWy-2M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1086747241649:android:26ff57ec52facce299c690",
+        "android_client_info": {
+          "package_name": "com.example.i_mess"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZv6sxX32U_LTKYx3S6BwR4d6xltWy-2M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
