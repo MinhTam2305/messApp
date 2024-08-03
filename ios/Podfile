@@ -5,16 +5,17 @@ target 'Runner' do
   use_modular_headers!
 
   # Flutter Pods
-  flutter_install_all_ios_pods File.dirname(File.realpath(__FILE__))
+  pod 'Flutter', :path => File.expand_path('..', __FILE__)
 
-  # Firebase Pods
+  # Firebase Pods (cập nhật theo phiên bản)
   pod 'Firebase/Core', '~> 10.3.0'
   pod 'Firebase/Firestore', '~> 10.3.0'
   pod 'Firebase/Auth', '~> 10.3.0'
   pod 'Firebase/Messaging', '~> 10.3.0'
+
+  flutter_install_all_ios_pods File.dirname(File.realpath(__FILE__))
 end
 
 post_install do |installer|
   flutter_post_install(installer)
 end
-
