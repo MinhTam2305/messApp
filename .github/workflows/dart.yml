@@ -20,12 +20,15 @@ jobs:
       - name: Install dependencies
         run: flutter pub get
 
+      - name: Check ios directory
+        run: |
+          if [ ! -d "ios" ]; then echo "ios directory does not exist"; exit 1; fi
+
       - name: Install CocoaPods dependencies
         run: |
           cd ios
           pod repo update
           pod install
-        working-directory: ios
 
       - name: Build iOS app
         run: flutter build ios --release --no-codesign
