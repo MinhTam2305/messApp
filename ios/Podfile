@@ -1,21 +1,15 @@
-platform :ios, '12.0'
+platform :ios, '10.0'
+
+# CocoaPods analytics
+install! 'cocoapods', :disable_input_output_paths => true
+
+# Flutter-specific settings
+flutter_root = File.expand_path('..', __dir__)
+load File.join(flutter_root, 'packages', 'flutter_tools', 'bin', 'podhelper.rb')
 
 target 'Runner' do
-  use_frameworks!
-  use_modular_headers!
-
   # Flutter Pods
-  pod 'Flutter', :path => File.expand_path('..', __FILE__)
-
-  # Firebase Pods (cập nhật theo phiên bản)
-  pod 'Firebase/Core', '~> 10.3.0'
-  pod 'Firebase/Firestore', '~> 10.3.0'
-  pod 'Firebase/Auth', '~> 10.3.0'
-  pod 'Firebase/Messaging', '~> 10.3.0'
-
   flutter_install_all_ios_pods File.dirname(File.realpath(__FILE__))
-end
 
-post_install do |installer|
-  flutter_post_install(installer)
+  # Your other pod dependencies go here
 end
